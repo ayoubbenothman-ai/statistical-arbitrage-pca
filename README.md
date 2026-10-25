@@ -73,9 +73,7 @@ $$
 
 whose exact discretization is an AR(1), $X_{n+1} = a + b\,X_n + \zeta_n$, estimated on each 60-day window:
 
-$$
-\kappa = -\ln b, \qquad m = \frac{a}{1-b}, \qquad \sigma_{eq} = \sqrt{\frac{\operatorname{Var}(\zeta)}{1-b^2}}
-$$
+$$\kappa = -\ln b, \qquad m = \frac{a}{1-b}, \qquad \sigma_{eq} = \sqrt{\frac{Var(\zeta)}{1-b^2}}$$
 
 A stock is only traded if $0 < b < 1$ and its half-life $\ln 2/\kappa$ is below 30 days. The signal is the normalized distance to equilibrium:
 
