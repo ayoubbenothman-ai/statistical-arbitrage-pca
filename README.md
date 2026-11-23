@@ -99,7 +99,10 @@ The thresholds are those of Avellaneda & Lee: open a short when $s > 1.25$ and c
 
 The strategy is market-neutral and the residuals do revert to their mean in the statistical sense, but the edge is too thin: the Sharpe ratio of 0.36 before costs disappears with 5 basis points of transaction costs. This is consistent with the decline of these strategies that Avellaneda & Lee observe after the early 2000s.
 
+## Limitations: there's data leakage after all!
+The correlation matrix is estimated on 2010-2019. So we're using future information...
 
+Selection bias: a trader in 2010 probably won't look at NVDA shares...
 ## Running the notebook
 
 ```bash
