@@ -99,7 +99,6 @@ The thresholds are those of Avellaneda & Lee: open a short when $s > 1.25$ and c
 
 The strategy is market-neutral and the residuals do revert to their mean in the statistical sense, but the edge is too thin: the Sharpe ratio of 0.36 before costs disappears with 5 basis points of transaction costs. This is consistent with the decline of these strategies that Avellaneda & Lee observe after the early 2000s.
 
-**Limitations and next steps.** The PCA is estimated once over the whole period, which introduces look-ahead bias and should be replaced by a rolling PCA. Short-selling costs are not modelled, the trading thresholds are not optimized, and the universe is small and chosen ex post (survivorship bias). Possible extensions: $k = 4$ or $5$ factors to capture energy, Kalman-filter betas, risk-based position sizing, and a universe of several hundred stocks.
 
 ## Running the notebook
 
