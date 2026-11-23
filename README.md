@@ -61,7 +61,7 @@ Each stock is regressed on the 3 factors by OLS over a rolling 60-day window, sh
 
 <img src="figures/cumulative_residuals.png" width="750">
 
-The augmented Dickey-Fuller test rejects the random walk at the 5% level for 21 stocks out of 25 (17 at the 1% level). Three of the four exceptions are oil stocks (XOM, EOG, SLB), probably because three factors do not fully capture the oil price.
+The augmented Dickey-Fuller test rejects the random walk at the 5% level for 21 stocks out of 25 (17 at the 1% level). Three of the four exceptions are oil stocks (XOM, EOG, SLB) (why??)
 
 ## 3. Ornstein-Uhlenbeck model and s-score
 
