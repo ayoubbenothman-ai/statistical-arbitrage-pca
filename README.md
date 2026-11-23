@@ -12,13 +12,13 @@ $$
 r_{i,t} = \alpha_i + \beta_i^\top F_t + \varepsilon_{i,t}
 $$
 
-The factors $F_t$ are not observed: they are estimated statistically, by PCA. The strategy isolates the residual $\varepsilon_{i,t}$, which should no longer carry any common market risk, and bets on its mean reversion once cumulated over time. To make the strategy truly market-neutral rather than a disguised directional bet, every position on stock $i$ is hedged by opposite positions of $\beta_{i,j}$ units in each factor portfolio $j$.
+The principal factors $F_t$ are estimated statistically by PCA. The strategy isolates the residual $\varepsilon_{i,t}$, which should no longer carry any common market risk, and bets on its mean reversion once cumulated over time. To make the strategy truly market-neutral rather than a disguised directional bet, every position on stock $i$ is hedged by opposite positions of $\beta_{i,j}$ units in each factor portfolio $j$.
 
 The project follows four steps:
 
 1. **Estimate the factors by PCA**, after denoising the empirical correlation matrix (Marchenko-Pastur threshold, Ledoit-Wolf shrinkage, Bouchaud-Potters clipping).
 2. **Estimate the betas** with a rolling regression of each stock on the factors, and compute the residuals.
-3. **Model the cumulative residuals** as an Ornstein-Uhlenbeck process and build a trading signal, the s-score.
+3. **Model the cumulative residuals** as an Ornstein-Uhlenbeck process and build a trading signal: the s-score.
 4. **Trade and backtest** the hedged portfolios.
 
 ## Data
