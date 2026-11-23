@@ -16,7 +16,7 @@ The principal factors $F_t$ are estimated statistically by PCA. The strategy iso
 
 The project follows four steps:
 
-1. **Estimate the factors by PCA**, after denoising the empirical correlation matrix (Marchenko-Pastur threshold, Ledoit-Wolf shrinkage, Bouchaud-Potters clipping).
+1. **Estimate the factors by PCA**, after denoising the empirical correlation matrix (two methods: Ledoit-Wolf shrinkage and Bouchaud-Potters clipping, both based on Marchenko-Pastur theory).
 2. **Estimate the betas** with a rolling regression of each stock on the factors, and compute the residuals.
 3. **Model the cumulative residuals** as an Ornstein-Uhlenbeck process and build a trading signal: the s-score.
 4. **Trade and backtest** the hedged portfolios.
