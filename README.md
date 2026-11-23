@@ -68,10 +68,10 @@ The augmented Dickey-Fuller test rejects the random walk at the 5% level for 21 
 The cumulative residual is modelled as
 
 $$
-dX_t = \kappa\,(m - X_t)\,dt + \sigma\,dW_t
+dX_t = \kappa (m - X_t)\,dt + \sigma dW_t
 $$
 
-whose exact discretization is an AR(1), $X_{n+1} = a + b\,X_n + \zeta_n$, estimated on each 60-day window:
+whose exact discretization is an AR(1), $X_{n+1} = a + bX_n + \zeta_n$, estimated on each 60-day window:
 
 $$\kappa = -\ln b, \qquad m = \frac{a}{1-b}, \qquad \sigma_{eq} = \sqrt{\frac{Var(\zeta)}{1-b^2}}$$
 
